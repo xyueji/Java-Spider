@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!--为工程引入dtd文件，编写代码做自动补齐功能  -->
+<struts><!--struts标签是文件的根标签  -->
+	<!-- constant 定义项目常量 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.devMode" value="true" />
+	<include file="org/apache/hadoop/action/struts.xml"></include>
+</struts>

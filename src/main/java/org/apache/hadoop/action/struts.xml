@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!--为工程引入dtd文件，编写代码做自动补齐功能  -->
+<struts><!--struts标签是文件的根标签  -->
+	<!-- constant 定义项目常量 -->
+	<package name="/" namespace="/" extends="struts-default">
+		<action name="spider_*" class="org.apache.hadoop.action.Spider" method="{1}">
+			<result name="spider">/success.jsp</result>
+			<result name="search">/search.jsp</result>
+			<result name="download">/download.jsp</result>
+		</action>
+	</package>
+</struts>
